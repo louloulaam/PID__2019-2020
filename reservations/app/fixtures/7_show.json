@@ -1,0 +1,379 @@
+[
+{
+    "model": "app.show",
+    "pk": 1,
+    "fields": {
+        "title": "Pierre-Laurent Aimard brengt Beethoven",
+        "slug": "pierre-laurent-aimard-brengt-beethoven",
+        "description": "\u2018Beethovens Vierde symfonie is als een slanke Griekse maagd tussen twee Noorse goden\u2019, aldus Robert Schumann. Dat is tre\ufb00end omschreven: terwijl je aan zijn Derde en Vijfde symfonie enig gevoel voor bombast kan toeschrijven, is zijn Vierde symfonie een bijzonder sprankelend en humoristisch werk. Pierre-Laurent Aimard laat met het Vijfde pianoconcerto van Beethoven (met zijn meedogenloos mooie tweede deel) horen dat hoewel zijn gehoor de componist in de steek liet, hij nog tot grootse composities in staat was. Als opener van deze concertavond: de ouverture van Cherubini\u2019s opera M\u00e9d\u00e9e, een werk waarover Beethoven \u2013 tegen de stroom in \u2013 laaiend enthousiast was.",
+        "poster": "https://images.pexels.com/photos/4408461/pexels-photo-4408461.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 19.0,
+        "date_created": "2020-06-16"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 2,
+    "fields": {
+        "title": "Antwerp Symphony Orchestra",
+        "slug": "antwerp-symphony-orchestra",
+        "description": "Guy Cassiers ensceneert het gedicht Tiresias van de Britse spoken word dichteres Kate Tempest. Katelijne Damen neemt de rol van verteller voor haar rekening. Met Katelijne Damen maakte Guy Cassiers enkele seizoenen geleden de voorstelling Orlando naar de roman van Virginia Woolf. Orlando vertelde toen, net als Tiresias nu, het verhaal van een transformatie van man naar vrouw en stelde daarbij vragen naar identiteit. Bij Tiresias gaat dat transformatieproces nog een stap verder: van man over vrouw naar ziener die een inzicht verwerft in de menselijke existentie. Tegenover de stem van de verteller staat de Achtste symfonie van Dmitri Sjostakovitsj, live uitgevoerd door het Antwerp Symphony Orchestra. De muziek van Sjostakovitsj \u2013 geschreven tijdens de Tweede Wereldoorlog \u2013 zit vol spanningen en vragen over identiteit en toekomst, en spiegelt op die manier de con\ufb02icten binnen de \ufb01guur van Tiresias.\r\nIn coproductie met Toneelhuis.\r\nGerealiseerd met de steun van de Tax Shelter van de Belgische Federale Overheid. Casa Kafka Pictures Tax Shelter Empowered by Belfius.",
+        "poster": "https://images.pexels.com/photos/4776/man-sunglasses-art-graffiti.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 14.2,
+        "date_created": "2020-04-26"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 3,
+    "fields": {
+        "title": "JAZZ JAM",
+        "slug": "jazz-jam",
+        "description": "Un \u00e9v\u00e9nement annuel, sans aucun but lucratif, destin\u00e9 \u00e0 r\u00e9unir, apr\u00e8s tous les stages d\u2019\u00e9t\u00e9 et les festivals, ainsi qu\u2019avant la reprise des cours d\u2019acad\u00e9mie, tous les musiciens amateurs et professionnels de jazz belges et parfois m\u00eame \u00e9trangers pour le plaisir des spectateurs que vous serez !",
+        "poster": "https://images.pexels.com/photos/4926676/pexels-photo-4926676.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 7.89,
+        "date_created": "2020-06-01"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 4,
+    "fields": {
+        "title": "J'abandonne une partie de moi que j'adapte",
+        "slug": "j-abandonne-une-partie-de-moi-que-j-adapte",
+        "description": "\u00cates-vous heureux ? Comment vivez-vous ? Quelle place le travail prend-il dans vos vies aujourd'hui ? Questions br\u00fblantes que vous pose Justine Lequette dans cette premi\u00e8re cr\u00e9ation marqu\u00e9e par le film documentaire tourn\u00e9 par Edgar Morin et Jean Rouch en 1960, 'Chronique d'un \u00e9t\u00e9'. Ppremi\u00e8re exp\u00e9rience fran\u00e7aise de cin\u00e9ma-v\u00e9rit\u00e9, Justine Lequette et ses quatre com\u00e9diens en reprennent les questions-cl\u00e9s, adress\u00e9es \u00e0 des passants, \u00e9tudiants, ouvriers, employ\u00e9s, immigr\u00e9s, dont l'entretien se prolongeait parfois dans un cadre plus intime. Ces questions, qui portent sur le bonheur, la vie, le travail, les utopies etc., ils se les posent aujourd'hui dans une soci\u00e9t\u00e9 qui, cinquante-sept ans plus tard, est \u00e0 la fois rest\u00e9e la m\u00eame et a beaucoup chang\u00e9. Mettant les deux \u00e9poques en perspective, ils insistent, en se nourrissant aussi de s\u00e9quences documentaires de Pierre Carles, d'extraits de pi\u00e8ces d'Alexandra Badea ainsi que d'\u00e9critures de plateau, sur la question du sens que nous donnons \u00e0 nos vies, dans une esth\u00e9tique inspir\u00e9e du r\u00e9el mais qui toujours d\u00e9veloppe un point de vue et une dimension ludique. Un projet initi\u00e9 et mis en sc\u00e8ne par Justine Lequette Avec R\u00e9mi Faure, Benjamin Lichou, Jules Puibaraud, L\u00e9a Romagny Production Cr\u00e9ation Studio Th\u00e9\u00e2tre National Wallonie-Bruxelles Coproduction Group Nabla Le spectacle J'abandonne une partie de moi que j'adapte inclut des extraits de : - La pi\u00e8ce Je te regarde d'Alexandra Badea. - Des textes des films Attention Danger Travail et Volem Rien Foutre al pais r\u00e9alis\u00e9s par Pierre Carles, Christophe Coello et St\u00e9phane Goxe. - Des textes et images du film documentaire Chronique d'un \u00e9t\u00e9, r\u00e9alis\u00e9 par Jean Rouch et Edgar Morin.",
+        "poster": "https://images.pexels.com/photos/4020288/pexels-photo-4020288.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 14.75,
+        "date_created": "2020-06-06"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 5,
+    "fields": {
+        "title": "Discours \u00e0 la nation",
+        "slug": "discours-a-la-nation",
+        "description": "Avec sa langue inimitable, \u00e0 la po\u00e9sie sautillante, \u00e0 l\u2019humour ravageur ; avec sa conscience politique et un v\u00e9ritable amour des \u00ab petites gens \u00bb ; avec son sens aigu de la musicalit\u00e9 des mots ; avec tout \u00e7a, Ascanio Celestini a construit en quelques ann\u00e9es une grande \u0153uvre de th\u00e9\u00e2tre.\r\nEvoquant une nouvelle fois la relation entre la classe dominante et la classe domin\u00e9e, Celestini renverse ici son point de vue : ce sont \u00e0 pr\u00e9sent les puissants qui parlent.\r\nAu milieu d\u2019un tas de caissettes en bois, avec f\u00e9rocit\u00e9 et un plaisir ostensible, David Murgia donne vie \u00e0 ces politiciens ou chefs d\u2019entreprise dont le discours, d\u00e9barrass\u00e9 de son vernis de respectabilit\u00e9, se pare d\u2019un grotesque aussi comique qu\u2019effrayant. La docilit\u00e9 du peuple, la d\u00e9mission des syndicats, le march\u00e9 globalis\u00e9, tout cela est salu\u00e9 par des personnages hilares et d\u00e9nu\u00e9s du moindre remords",
+        "poster": "https://images.pexels.com/photos/4936470/pexels-photo-4936470.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 18.99,
+        "date_created": "2020-07-16"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 6,
+    "fields": {
+        "title": "Going Home",
+        "slug": "going-home",
+        "description": "L\u2019histoire commence \u00e0 Hambourg. Dans un parc et sous la neige. Il y a l\u00e0 un homme noir \u00e9gar\u00e9, avec 5.000 euros \u00e0 ses pieds. Le braquage a foir\u00e9, la police est venue l\u2019arr\u00eater. Tout le monde le regarde. Il se demande ce qu\u2019il fait l\u00e0. En quelques mots, le d\u00e9cor est plant\u00e9: l\u2019histoire de 'Michalak l\u2019\u00e9thiopien' s\u2019offre \u00e0 nous.",
+        "poster": "https://images.pexels.com/photos/5081971/pexels-photo-5081971.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 21.75,
+        "date_created": "2021-01-23"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 7,
+    "fields": {
+        "title": "Cyrano de Bergerac",
+        "slug": "cyrano-de-bergerac",
+        "description": "Quel bonheur de vous proposer ce chef-d\u2019\u0153uvre immortel ! C\u2019est Bernard Yerl\u00e8s qui pr\u00eatera son nez au r\u00f4le-titre, entra\u00eenant avec lui une joyeuse \u00e9quipe de 19 com\u00e9diens. Venez d\u00e9couvrir ce spectacle en famille. La langue de Rostand est sublime et notre splendide salle est l\u2019\u00e9crin id\u00e9al pour la mettre en valeur.",
+        "poster": "https://images.pexels.com/photos/1769339/pexels-photo-1769339.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 29.99,
+        "date_created": "2020-08-25"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 8,
+    "fields": {
+        "title": "BIBOT DISTINGU\u00c9E \u2013 CIRQUE ROYAL",
+        "slug": "bibot-distinguee-cirque-royal",
+        "description": "La Jeannie Longo du rire (comme elle se qualifie elle-m\u00eame) a de quoi filer des complexes \u00e0 la jeunesse. Dr\u00f4le, \u00e9mouvante et d\u2019une in\u00e9gal\u00e9e aisance sc\u00e9nique, Laurence Bibot se renouvelle encore avec cette seconde incursion dans l\u2019univers du stand up, apr\u00e8s le succ\u00e8s de \u00ab Bibot Debout \u00bb. Elle est toute seule dans sa cat\u00e9gorie : celle des femmes qui ont un chien fou mais qui n\u2019h\u00e9sitent pourtant pas \u00e0 lever la patte sur tout ce qui passe \u00e0 leur port\u00e9e. Avec ses mani\u00e8res d\u2019aristo et saillies de chauffeur poids lourd, Laurence Bibot manie avec dext\u00e9rit\u00e9 l\u2019art consomm\u00e9 du d\u00e9calage entre l\u2019\u00e9l\u00e9gance de l\u2019emballage et la crudit\u00e9 du propos. Irr\u00e9sistible, comme toujours.",
+        "poster": "https://images.pexels.com/photos/1279813/pexels-photo-1279813.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 27.95,
+        "date_created": "2019-06-02"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 9,
+    "fields": {
+        "title": "Retours sur un fils de notre temps",
+        "slug": "retours-sur-un-fils-de-notre-temps",
+        "description": "Des \u00e9l\u00e8ves du Coll\u00e8ge Saint Hubert, de l\u2019Institut Saint julien Parnasse, de l\u2019Ath\u00e9n\u00e9e Royal Jean Absil, de l\u2019Ath\u00e9n\u00e9e Joseph Bracops et de L\u2019autre c\u00f4t\u00e9 de l\u2019\u00e9cole font \u00ab Une proposition politique des fils et des filles de notre temps pour le monde de demain \u00bb. R\u00e9sultat des ateliers men\u00e9s par le Th\u00e9\u00e2tre de la Chute autour d\u2019Un fils de notre temps qui ont consist\u00e9 \u00e0 ce que chaque classe d\u00e9nonce 3 dysfonctionnements du monde d\u2019aujourd\u2019hui et propose 3 mesures concr\u00e8tes pour y rem\u00e9dier. Chaque classe a d\u00e9battu de la th\u00e9matique et a travaill\u00e9 collectivement pour faire de cette r\u00e9flexion un discours qu\u2019un \u00e9l\u00e8ve d\u00e9l\u00e9gu\u00e9 par classe donnera au Petit Varia.\r\nLes \u00e9l\u00e8ves d\u00e9l\u00e9gu\u00e9s se succ\u00e8deront \u00e0 la tribune, tels des orateurs. Chaque classe pourra soutenir son candidat par une campagne de promotion (affiches, tracts, slogans, etc.). Il y aura un vote, et un d\u00e9pouillement sous le contr\u00f4le d\u2019assesseurs tir\u00e9s au hasard, un temps de n\u00e9gociation, et un d\u00e9briefing g\u00e9n\u00e9ral.",
+        "poster": "https://images.pexels.com/photos/3739993/pexels-photo-3739993.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 17.75,
+        "date_created": "2020-06-30"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 10,
+    "fields": {
+        "title": "Sweet and Swing",
+        "slug": "sweet-and-swing",
+        "description": "Personnage rare et d\u00e9cal\u00e9, rempli d\u2019humour, de po\u00e9sie, de fantaisie, Mlle Lily rentre chez elle les bras charg\u00e9s de tr\u00e9sors glan\u00e9s au dehors. M\u00e9ticuleuse, un peu r\u00e9tro, elle berce son quotidien de chants puis\u00e9s dans le r\u00e9pertoire jazz et se construit un monde f\u00e9\u00e9rique. Mais les objets qui l\u2019entourent en ont d\u00e9cid\u00e9 autrement\u2026",
+        "poster": "https://images.pexels.com/photos/2820885/pexels-photo-2820885.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 11.1,
+        "date_created": "2020-09-12"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 11,
+    "fields": {
+        "title": "Antoine H\u00e9naut",
+        "slug": "antoine-henaut",
+        "description": "Apr\u00e8s un pass\u00e9 de jongleur, le voil\u00e0 sur les planches, accompagn\u00e9 de ses comparses musiciens. Antoine H\u00e9naut nous emm\u00e8ne aux sons doux et enivrants dans un r\u00e9pertoire de chansons franc\u0327aises. Paroles subtiles et dr\u00f4les, il aborde les th\u00e8mes du quotidien, sans \u00e9pargner personne, attirant d\u00e8s les premie\u0300res paroles la sympathie du public.",
+        "poster": "https://images.pexels.com/photos/5100244/pexels-photo-5100244.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 14.55,
+        "date_created": "2020-11-12"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 12,
+    "fields": {
+        "title": "D E N A",
+        "slug": "dena",
+        "description": "Cette Bruxelloise aux origines iraniennes a commenc\u00e9 l'humour, il y a trois ans. Elle se fraye un chemin en plusieurs langues et participe \u00e0 des plateaux d'humour dans toute la Belgique !\r\nD E N A s'est imm\u00e9diatement faite remarquer gr\u00e2ce \u00e0 ses anecdotes personnelles et ses observations frappantes. Elle fait du stand-up, entrem\u00eal\u00e9 de personnages. Sa famille, ses origines, ses relations, son travail et sa vie hors du commun infusent ses sketchs. Un sens de l'humour \u00e9norme qui vous fera exploser de rire !",
+        "poster": "https://images.pexels.com/photos/4466814/pexels-photo-4466814.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 11.99,
+        "date_created": "2020-11-25"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 13,
+    "fields": {
+        "title": "SONS OF DISASTER",
+        "slug": "sons-of-disaster",
+        "description": "C'est en 2010 qu'\u00e0 \u00ab Bxhell Rock City \u00bb s'est form\u00e9 Sons Of Disaster, du \u00ab High Octane Rock'n'roll \u00bb dop\u00e9 aux riffs surpuissants accompagn\u00e9s de percussions tonitruantes, de lignes de basses impardonnables et des textes d'une fluidit\u00e9 limpide aux relents de vieux bourbon, dans la plus pure lign\u00e9e de la tradition Rock'N'Roll. C'est donc sous cette appellation que Greg, Gilles, Selim, Yoni et JT ont d\u00e9cid\u00e9 de s'affirmer dans l'histoire du Rock. Ils vivent chacun de leurs concerts comme si c'\u00e9tait leur dernier. Qu'il y ait 10 ou 1000 personnes, les Sons of Disaster donnent tout ce qu'ils ont dans le ventre pour transmettre au maximum, l'\u00e9nergie de leurs morceaux !",
+        "poster": "https://images.pexels.com/photos/4110334/pexels-photo-4110334.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-11-28"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 14,
+    "fields": {
+        "title": "spectavlce 21 daz",
+        "slug": "spectavlce-21-daz",
+        "description": "ddzefezf",
+        "poster": "https://images.pexels.com/photos/3230019/pexels-photo-3230019.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 3.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 15,
+    "fields": {
+        "title": "L\u2019\u00c9tat de si\u00e8ge",
+        "slug": "letat-de-siege",
+        "description": "Un appel au courage face aux pouvoirs de la peur, un th\u00e9\u00e2tre pour aujourd\u2019hui.",
+        "poster": "https://images.pexels.com/photos/4300986/pexels-photo-4300986.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 16,
+    "fields": {
+        "title": "8980 : Book of travelers",
+        "slug": "8980-book-of-travelers",
+        "description": "8980 miles parcourus en train pour d\u00e9couvrir l\u2019Am\u00e9rique de Trump.",
+        "poster": "https://images.pexels.com/photos/4717879/pexels-photo-4717879.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 17,
+    "fields": {
+        "title": "Alice et autres merveilles",
+        "slug": "alice-et-autres-merveilles",
+        "description": "O\u00f9 l\u2019on r\u00e9ouvre le fascinant livre d\u2019Alice, h\u00e9ro\u00efne \u00e9ternelle dont les myst\u00e9rieuses aventures fascinent toutes les g\u00e9n\u00e9rations.",
+        "poster": "https://images.pexels.com/photos/3561946/pexels-photo-3561946.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 5.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 18,
+    "fields": {
+        "title": "Bouvard et P\u00e9cuchet",
+        "slug": "bouvard-et-pecuchet",
+        "description": "Une com\u00e9die hilarante et jubilatoire pour d\u00e9noncer la\u00a0b\u00eatise \u00ab\u00a0\u00e9ternelle et universelle\u00a0\u00bb.",
+        "poster": "https://images.pexels.com/photos/4228447/pexels-photo-4228447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 15.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 19,
+    "fields": {
+        "title": "La Fresque",
+        "slug": "la-fresque",
+        "description": "Inspir\u00e9 par un conte chinois, un kal\u00e9idoscope d'images f\u00e9\u00e9riques.",
+        "poster": "https://images.pexels.com/photos/406199/pexels-photo-406199.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 20,
+    "fields": {
+        "title": "Red \u2013 A Documentary Performance",
+        "slug": "red-a-documentary-performance",
+        "description": "Inventaire du mao\u00efsme des ann\u00e9es 60 par une pionni\u00e8re de la danse contemporaine en Chine",
+        "poster": "https://images.pexels.com/photos/5010780/pexels-photo-5010780.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 21,
+    "fields": {
+        "title": "blablabla",
+        "slug": "blablabla",
+        "description": "Un flot parl\u00e9-chant\u00e9 de paroles aux origines les plus diverses",
+        "poster": "https://images.pexels.com/photos/2412941/pexels-photo-2412941.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 5.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 22,
+    "fields": {
+        "title": "C\u2019est la vie",
+        "slug": "cest-la-vie",
+        "description": "Avec bienveillance et humour, deux histoires intimes, un acte de partage, donc un acte de th\u00e9\u00e2tre",
+        "poster": "https://images.pexels.com/photos/4485102/pexels-photo-4485102.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 23,
+    "fields": {
+        "title": "C\u00e9dric Andrieux",
+        "slug": "cedric-andrieux",
+        "description": "J\u00e9r\u00f4me Bel propose \u00e0 un danseur de porter sur sc\u00e8ne le r\u00e9cit de son parcours",
+        "poster": "https://images.pexels.com/photos/4932864/pexels-photo-4932864.png?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 5.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 24,
+    "fields": {
+        "title": "Chotto Desh",
+        "slug": "chotto-desh",
+        "description": "Un voyage enchanteur, riche en images et sensations, \u00e0 partager par les \u00e2mes sensibles de toutes les g\u00e9n\u00e9rations",
+        "poster": "https://images.pexels.com/photos/1494068/pexels-photo-1494068.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 25,
+    "fields": {
+        "title": "Conversation entre Mohamed El Khatib et Alain Cavalier",
+        "slug": "conversation-entre-mohamed-el-khatib-et-alain-cavalier",
+        "description": "N/D",
+        "poster": "https://images.pexels.com/photos/3987393/pexels-photo-3987393.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 10.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 26,
+    "fields": {
+        "title": "d\u2019\u00e0 c\u00f4t\u00e9",
+        "slug": "da-cote",
+        "description": "Paysage onirique, cr\u00e9atures fantastiques et jeux de lumi\u00e8res",
+        "poster": "https://images.pexels.com/photos/4665930/pexels-photo-4665930.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": false,
+        "price": 0.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 27,
+    "fields": {
+        "title": "Dans la peau de Don Quichotte",
+        "slug": "dans-la-peau-de-don-quichotte",
+        "description": "Don Quichotte et Sancho Panza r\u00e9invent\u00e9s pour le 3e mill\u00e9naire",
+        "poster": "https://images.pexels.com/photos/4010464/pexels-photo-4010464.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 5.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 28,
+    "fields": {
+        "title": "Dark Circus",
+        "slug": "dark-circus",
+        "description": "Un savoureux \u00e9loge du ratage sign\u00e9 par des enfants de M\u00e9li\u00e8s",
+        "poster": "https://images.pexels.com/photos/4835037/pexels-photo-4835037.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 8.0,
+        "date_created": "2020-08-31"
+    }
+},
+{
+    "model": "app.show",
+    "pk": 29,
+    "fields": {
+        "title": "Dolap",
+        "slug": "dolap",
+        "description": "Un vieux frigidaire sur sc\u00e8ne, id\u00e9al pour cr\u00e9er des situations absurdes ou loufoques",
+        "poster": "https://images.pexels.com/photos/3214409/pexels-photo-3214409.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "bookable": true,
+        "price": 8.0,
+        "date_created": "2020-08-31"
+    }
+}
+]

@@ -1,0 +1,22 @@
+<!-- show CRUD html template-->
+{% extends "base.html" %}
+
+{% block header %} <h2> CRUD DES SHOW ! </h2> {% endblock header %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<!-- The form to update or create a show-->
+
+<form method="post">
+  {%csrf_token %}
+  {{ createform|crispy }}
+  {{ updateform|crispy }}
+  <br>
+  <button class="btn btn-info" type="submit">Enregistrer </button>
+
+</form>
+
+
+{% endblock content %}

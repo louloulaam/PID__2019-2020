@@ -1,0 +1,14 @@
+<!-- paypal return html template-->
+{% extends "base.html" %}
+
+{% block title %}Merci pour votre achat{% endblock %}
+
+{% block content %}
+
+<h1 class="alert alert-success"> Merci pour votre achat, nous l'avons bien enregistré !</h1>
+
+<div>
+    <h2>Si vous souhaitez faire une autre réservation : <a class="btn btn-success" href="{% url 'show' %}"> Cliquez ici ! </a></h2>
+</div>
+
+{% endblock %}

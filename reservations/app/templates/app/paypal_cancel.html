@@ -1,0 +1,14 @@
+<!-- paypal cancel html template-->
+{% extends "base.html" %}
+
+{% block title %}Paiement annulé{% endblock %}
+
+{% block content %}
+
+<h1 class="alert alert-danger"> Vous avez annulé votre paiement, quel dommage !</h1>
+
+<div>
+    <h2> Si vous souhaitez faire une autre réservation : <a class="btn btn-success" href="{% url 'show' %}"> Cliquez ici ! </a></h2>
+</div>
+
+{% endblock %}

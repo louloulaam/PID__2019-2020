@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <title>{% block title %}{% endblock title %}</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap , jquery, popper, bootstrap core JS -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- add fontawesome link to make disponible amazing icon -->
+    <script src="https://kit.fontawesome.com/10b9094114.js"></script>
+    <!-- link to a css file  -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+    <!-- some css rules before definition of a assets files  -->
+    <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+img {
+	max-width: 100%;
+	height: auto;
+}
+    </style>
+    <!-- CSS error page-->
+    <style>
+        .error-template {
+          padding: 40px 15px;text-align: center;
+        }
+        .error-actions {
+          margin-top:15px;margin-bottom:15px;
+            }
+        .error-actions .btn {
+          margin-right:10px;
+          }
+    </style>
+</head>
+
+<body>
+<!-- Jumbotron Header -->
+<header>
+    <a href="{% url 'home' %}" style="text-decoration:none;color:black;">
+    <div class="header">
+        <div class="inner-header flex">
+            <svg version="1.1" class="logo" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 500" xml:space="preserve">
+                <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
+                <g>
+                    <path fill="#fff" d="M250.4,0.8C112.7,0.8,1,112.4,1,250.2c0,137.7,111.7,249.4,249.4,249.4c137.7,0,249.4-111.7,249.4-249.4
+    C499.8,112.4,388.1,0.8,250.4,0.8z M383.8,326.3c-62,0-101.4-14.1-117.6-46.3c-17.1-34.1-2.3-75.4,13.2-104.1
+    c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z" />
+                </g>
+            </svg>
+            <h1>Projet de Réservations 🤠 Django 🤠</h1>        
+        </div>
+    
+        <!--Waves Container-->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                </g>
+            </svg>
+        </div>
+        <!--Waves end-->
+    
+    </div>
+    </a>
+    <!-- Navigation -->    
+    <nav class="navbar sticky-top navbar-expand-lg bg-light navbar-light ">
+        <div class="container">
+        <a class="navbar-brand" href="{% url 'home' %}"><i class="fas fa-align-left"></i> Accueil</a>
+        <button class="navbar-toggler" data-target="#collapsibleNavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'show' %}">Spectacles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'LocationListView' %}">Lieux des évenements</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="{% url 'api_list' %}">API</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mr-2" href="{% url 'rss_list' %}"><i class="fas fa-rss"></i></a>
+                </li>
+                {% if user.is_staff %}
+                <li class="nav-item mr-2 nav-icc">
+                    <a class="nav-link" href="{% url 'admin:index' %}">Administration</a>
+                </li>
+                {% endif %}
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown nav-icc">
+                    {% if user.first_name and user.last_name %}
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Bonjour {{ user.first_name }} {{ user.last_name }} <i class="fas fa-user"></i></a>
+                    {% else %}
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Bonjour {{ user.username }} <i class="fas fa-user"></i></a>
+                    {% endif %}
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="{% url 'profile' %}#profil ">Mon profil</a>
+                        <a class="dropdown-item" href="{% url 'profile' %}#Mes_reservations ">Mes reservations</a>
+                        <a class="dropdown-item" href="{% url 'logout'%}">Se déconnecter <i class="fas fa-sign-out-alt"></i></a>
+                    </div>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'register' %}">Vous n'avez pas encore de compte ?</a>
+                </li>
+                <li class="nav-item nav-icc">
+                    <a class="nav-link" href="{% url 'login' %}">Se connecter <i class="fas fa-user"></i></a>
+                </li>
+                {% endif %}
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+</header>
+
+<!-- container - Page Content -->
+<div class="container" style="margin-top:30px;margin-bottom:30px">
+    {% block content %} Base content {% endblock content %}
+</div>
+
+<!-- Footer -->
+<footer class="py-5 bg-light">
+    <div class="container">
+        <p class="m-0 text-center text-dark">Projet réalisé par Ayoub HAOJI </p>
+        <p class="m-0 text-center text-dark">
+            Copyright &copy; 2020 | <a href="https://github.com/louloulaam/PID_2019-2020">Dépôt GitHub</a>
+        </p>
+        <p class="m-0 text-center text-dark">Projet d'intégration de développement 2019-2020 | Institut des Carrières Commerciales</p>
+    </div>
+</footer>
+
+</body>
+</html>

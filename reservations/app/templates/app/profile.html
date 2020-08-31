@@ -1,0 +1,73 @@
+<!-- profile page-->
+
+{% extends "base.html" %}
+
+{% block title %}Page de profil{% endblock %}
+
+{% block content %}
+
+<section class="content">
+
+
+    <div class="card border-dark mb-4" id="profil">
+        <h5 class="card-header bg-dark text-white">{{ user.username }}</h5>
+        <div class="card-body">
+            <h5>Nom : {{ user.last_name }}</h5>
+            <h5>Prénom : {{ user.first_name }}</h5>
+            <h5>E-mail : {{ user.email }}</h5>
+            <h5>Langue : {{ user.userprofile.language }}</h5>
+            <a href='{% url "profile-update" %}' class="btn btn-secondary">Modifier le profil</a>
+        </div>
+    </div>
+
+    <h2 id="Mes_reservations"> Mes réservations</h2>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Spectacle</th>
+            <th>Date</th>
+            <th>Nombre de Sièges</th>
+            <th>Prix</th>
+            <th>Statut</th>
+            <th> </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for reservation in reservations %}
+        {% if reservation.status == "Ongoing" %}
+        <tr class="table-success">
+            <td>{{reservation.representation.show.title}}</td>
+            <td>{{reservation.time}}</td>
+            <td>{{reservation.seats}}</td>
+            <td>{{reservation.price}}</td>
+            <td>{{reservation.status}}</td>
+            <td>
+                <a href="{% url 'reservationdetails' reservation.pk %}">
+                    <button type="button" class="btn btn-success">Réserver</button>
+                </a>
+            </td>
+        </tr>
+        {% else %}
+        <tr class="table-secondary">
+            <td>{{reservation.representation.show.title}}</td>
+            <td>{{reservation.time}}</td>
+            <td>{{reservation.seats}}</td>
+            <td>{{reservation.price}}</td>
+            <td>{{reservation.status}}</td>
+            <td>
+                <a href="{% url 'reservationdetails' reservation.pk %}">
+                    <button type="button" class="btn btn-secondary" disabled>Réserver</button>
+                </a>
+            </td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+
+        </tbody>
+    </table>
+</section>
+
+
+{% endblock  %}
+

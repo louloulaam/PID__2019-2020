@@ -1,0 +1,82 @@
+[
+{
+    "model": "app.artist",
+    "pk": 1,
+    "fields": {
+        "firstname": "Jeano",
+        "lastname": "Mero"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 2,
+    "fields": {
+        "firstname": "Pauly",
+        "lastname": "Mola"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 3,
+    "fields": {
+        "firstname": "Read",
+        "lastname": "Ted"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 4,
+    "fields": {
+        "firstname": "Lara",
+        "lastname": "Mulon"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 5,
+    "fields": {
+        "firstname": "Pauline",
+        "lastname": "MoCart"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 6,
+    "fields": {
+        "firstname": "Riz",
+        "lastname": "Noo"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 7,
+    "fields": {
+        "firstname": "Kot",
+        "lastname": "West"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 8,
+    "fields": {
+        "firstname": "Jula",
+        "lastname": "Louma"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 9,
+    "fields": {
+        "firstname": "Hary",
+        "lastname": "Colo"
+    }
+},
+{
+    "model": "app.artist",
+    "pk": 10,
+    "fields": {
+        "firstname": "britta",
+        "lastname": "Mezo"
+    }
+}
+]

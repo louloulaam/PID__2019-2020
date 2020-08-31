@@ -1,0 +1,23 @@
+[
+{
+    "model": "app.types",
+    "pk": 1,
+    "fields": {
+        "types": "Acteur"
+    }
+},
+{
+    "model": "app.types",
+    "pk": 2,
+    "fields": {
+        "types": "Musiscien"
+    }
+},
+{
+    "model": "app.types",
+    "pk": 3,
+    "fields": {
+        "types": "Chanteur"
+    }
+}
+]

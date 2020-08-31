@@ -1,0 +1,76 @@
+<!-- register form-->
+{% extends 'base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<h2>Enregistrez-vous</h2>
+<!--<form method="post">
+    &lt;!&ndash; csrf_token protection&ndash;&gt;
+    {% csrf_token %}
+    &lt;!&ndash;user_form instead of form&ndash;&gt;
+    {{ user_form }}
+    &lt;!&ndash;user_profile_form instead of form&ndash;&gt;
+    {{ user_profile_form }}
+    <button type="submit">Sign up</button>
+</form>-->
+
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+        <div class="col-md-8 col-lg-6">
+            <div class="login d-flex align-items-center py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-lg-8 mx-auto">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">S'enregistrer</h5>
+                                <form class="form-signin" action={% url 'register' %} method="post">
+                                {% csrf_token %}
+                                <div class="form-label-group">
+                                    {{user_form.username}}
+                                    <label for="{{user_form.username.id_for_label}}">Username</label>
+                                </div>
+                                <div class="form-label-group">
+                                    {{user_form.first_name}}
+                                    <label for="{{user_form.first_name.id_for_label}}">Prénom</label>
+                                </div>
+                                <div class="form-label-group">
+                                    {{user_form.last_name}}
+                                    <label for="{{user_form.last_name}.id_for_label}">Nom</label>
+                                </div>
+                                <div class="form-label-group">
+                                    {{user_form.email}}
+                                    <label for="{{user_form.email.id_for_label}}">Email address</label>
+                                </div>
+                                <hr>
+                                <div class="form-label-group">
+                                    {{user_form.password1}}
+                                    <label for="{{user_form.password1.id_for_label}}">Password</label>
+                                </div>
+                                <div class="form-label-group">
+                                    {{user_form.password2}}
+                                    <label for="{{user_form.password2.id_for_label}}">Confirm password</label>
+                                </div>
+                                <div class="form-label-group">
+                                    {{user_profile_form.language}}
+                                    <label for="{{user_profile_form.language.id_for_label}}"></label>
+                                </div>
+                                    {{user_form.errors}}
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">
+                                    s'enregistrer
+                                </button>
+                                <a class="d-block text-center mt-2 small" href="{% url 'login' %}">Se connecter</a>
+                                <hr class="my-4">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,97 @@
+<!-- reservation view html template-->
+{% extends "base.html" %}
+{% block title %}{{ representation.show.title }}{% endblock %}
+{% block content %}
+
+<div class="pb-5">
+
+    <form class="container" method='get' action ='{% url "reservationupdate" representation.pk %}'>
+
+        <div class="row p-5 bg-white rounded shadow mb-5">
+            <div class="col-12 bg-dark text-light rounded-pill px-4 py-3 mb-5 text-uppercase font-weight-bold">Détail spectacle et
+                quantité
+            </div>
+
+            <div class="col-2 col-xs-2"><img class="img-responsive img-fluid" style=" max-width: 100%; height: auto;" src="{{representation.show.poster|default:'http://placehold.it/200x200'}}">
+            </div>
+            <div class="col-4 col-xs-4">
+                <h4 class="product-name"><strong>{{ representation.show.title }}</strong></h4>
+                <p><small>{{ representation.show.description }}</small></p>
+            </div>
+            <div class="col-6 col-xs-6">
+                <div class="row">
+                    <div class="col-6 col-xs6 text-right">
+                        <h6><strong><span id="price">{{ representation.show.price }}</span> € <span class="text-muted">x</span></strong></h6>
+                    </div>
+                    {% if representation.show.bookable and representation.available_seats > 0 %}
+                    <div class="col-4 col-xs-4">
+                        <input type="number" name='qty' id="myQty" class="form-control input-sm" onchange="myFunction()" value="1" min="1" max="{{ representation.available_seats }}">
+                    </div>
+                    {% else %}
+                    <div class="col-4 col-xs-4">
+                        <input type="text" name='qty' id="myQty" class="form-control input-sm" disabled value="0">
+                    </div>
+                    {% endif %}
+                    <div class="col-2 col-xs-2">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- End -->
+
+        <div class="row py-5 p-4 bg-white rounded shadow">
+            <div class="col-lg-6">
+                <div class="bg-dark text-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Location Details</div>
+                <div class="p-4">
+                    <p class="font-italic mb-4">
+                    <ul>
+                        <li> Lieu : {{ representation.location.designation}}</li>
+                        <li> Date et heure : {{ representation.time }}</li>
+                        <li> Adresse : {{ representation.location.address }}</li>
+                        <li> Localité : {{representation.location.locality.postal_code}} {{ representation.location.locality.locality }} </li>
+                        <li> Nombre de place restante : {{ representation.available_seats }}</li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bg-dark text-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">Résumer de la commande
+                </div>
+                <div class="p-4">
+                    <ul class="list-unstyled mb-4">
+<!--                        <li class="d-flex justify-content-between py-3 border-bottom"><strong class="text-muted">
+                            Total-HTVA </strong><strong>€ <span id="totalhtva"></span> </strong></li>
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                class="text-muted">TVA</strong><strong> € <span id="tva"></span></strong></li>-->
+                        <li class="d-flex justify-content-between py-3 border-bottom"><strong
+                                class="text-muted">Total</strong>
+                            <h5 class="font-weight-bold"> € <span id="total">{{ representation.show.price}}</span></h5>
+                        </li>
+                    </ul>
+                    {% if representation.show.bookable and representation.available_seats > 0 %}
+                    <input type="submit" value="Passage en caisse" class="btn btn-success rounded-pill py-2 btn-block"></input>
+                    {% elif not representation.show.bookable %}
+                    <p style="color: red;"> Les réservations pour ce spectacle ({{ representation.show.title }}) sont désormais indisponibles. </p>
+                    {% else %}
+                    <span style="color: red ;"> Malheureusement, il n'y a plus aucune place de disponible. </span>
+                    <span style="color: red ;" >Mais vous pouvez toujours assiter à une autre représentation du spectacle. <a class="btn btn-success" href="{% url 'show_detail_slug' representation.show.slug %}">Cliquez ici pour voir les autres représentations de {{ representation.show.title }}</a></span>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+</div>
+
+<script language="JavaScript">
+function myFunction() {
+  var price = parseFloat('{{ representation.show.price| safe }}');
+  var qty = document.getElementById("myQty").value;
+  var total = qty * price;
+  document.getElementById("total").innerHTML = total.toFixed(2);
+}
+</script>
+
+{% endblock %}

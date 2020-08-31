@@ -1,0 +1,276 @@
+[
+{
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$v689eX1VLryd$0RjFn+J/Oq5xD18mIsx7aAaqdL4I+U2x/OFBaxCwMKg=",
+        "last_login": "2020-08-31T14:43:12.741Z",
+        "is_superuser": true,
+        "username": "sao",
+        "first_name": "",
+        "last_name": "",
+        "email": "nobaka3274@zaelmo.comeeee",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-08-31T09:14:11Z",
+        "groups": [
+            1,
+            2,
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$Bjpa5LnNPDt9$bYFwwJ8K+TnpzPbnkfcRao5Tl5Wfs4EJBj7e9eZgYCQ=",
+        "last_login": "2020-01-29T23:24:31Z",
+        "is_superuser": false,
+        "username": "carle",
+        "first_name": "Carle",
+        "last_name": "Oliver",
+        "email": "carlos.olivera@umbrella-ubcs.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-01-29T23:11:00Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$lBsKSlKLvmey$Pz1tvyYUVPexIQ5a/qCjTfvZyUsJXSKbVc+so6i/7pA=",
+        "last_login": "2020-05-02T13:20:09Z",
+        "is_superuser": false,
+        "username": "ada",
+        "first_name": "Ada",
+        "last_name": "Wong",
+        "email": "ada.wong@raccoon-city.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-02T13:20:00Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$X5f6skGCN8He$Lf9hg54huyF518VNFFVRZkdTLr2adbWg/c+d5SsNMMk=",
+        "last_login": "2020-03-18T17:10:00Z",
+        "is_superuser": false,
+        "username": "jillaa",
+        "first_name": "Jilla",
+        "last_name": "kentin",
+        "email": "jilla.kentin@rpd-stars.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-05-03T16:10:00Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$z4UK2tkbNWzR$IoL2IRIEXGYUb7Km/VfpjgByPjy1AL2Od8LgG3lpmYY=",
+        "last_login": "2020-03-18T19:00:00Z",
+        "is_superuser": false,
+        "username": "leon",
+        "first_name": "Leon",
+        "last_name": "crak",
+        "email": "leon.crak@rpd.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-03-18T19:00:00Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$Fy81QBkF3f6w$J7ruo3GbCcdyIaLvIu5TnIUjj70WwjdwPRlGXpMCKlw=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "shella",
+        "first_name": "Shella",
+        "last_name": "Beo",
+        "email": "shella.beo@raccoon-city.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-04-03T16:21:00Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 24,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$jpV5Bk7GiY8Z$9nir23MHIm/Qhvwp4kjD5m9RP793rnXFy3vJwi452J0=",
+        "last_login": "2020-05-18T16:32:12.051Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-05-10T21:12:11.515Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 25,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$Jd6smjA2nsyy$tcorkNeeW3ooyEpgILouV21+Uvac7lapaOvk2Ia8N7Y=",
+        "last_login": "2020-02-27T19:00:00Z",
+        "is_superuser": false,
+        "username": "claris",
+        "first_name": "Claris",
+        "last_name": "Green",
+        "email": "clairis.green@raccoon-city.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-01-18T19:35:00Z",
+        "groups": [
+            3
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 26,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$JWrsS9PeWcxC$O6GNO/Ale4ixF901+qyZPQ1Uv6UGh6CXnCVQkILQECc=",
+        "last_login": "2020-02-28T19:00:00Z",
+        "is_superuser": false,
+        "username": "chris",
+        "first_name": "Chrismo",
+        "last_name": "Blow",
+        "email": "chrismo.blow@rpd-stars.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-05-18T17:10:00Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 27,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$SrEHJoGjnmTg$y8SZDXWOLkMz9CduCfcZkBEyO0oFV57rkQ3HHazPz6Q=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "rek",
+        "first_name": "rek",
+        "last_name": "Chambero",
+        "email": "rek.chamber0@rpd-stars.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-18T16:40:00Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 28,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$QEm70MnKgGTB$9STbUC6+LTx+dg/dVQfsCIHmppj5/6b+hJoy5GLWyNU=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "alberto",
+        "first_name": "Alberto",
+        "last_name": "Boly",
+        "email": "alberto.boly@rpd-stars.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-08-17T16:40:00Z",
+        "groups": [
+            1
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 29,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$7bz7j3xCNrxH$Xq/B+0lFpGmrn9J3FYqYEbeWIyeSDjP64T5APmsKY6U=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Lodo",
+        "first_name": "Lodo",
+        "last_name": "Jo",
+        "email": "lodo.jo@rpd-stars.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-05-18T16:44:47Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 30,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$AVysQVqlB6LW$TgrM1hWHup9uihkCiuf3IsqmT5ym1Erkai8byP/zvdI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "brad",
+        "first_name": "Brada",
+        "last_name": "Vam",
+        "email": "brada.vam@rpd-stars.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2020-03-20T17:45:00Z",
+        "groups": [
+            2
+        ],
+        "user_permissions": []
+    }
+},
+{
+    "model": "auth.user",
+    "pk": 31,
+    "fields": {
+        "password": "pbkdf2_sha256$180000$zZMToWihWFAO$Pi8tXW9SJ26qt/IdVd2Beo+gt9YAZ9CNAi9hzkyaR9U=",
+        "last_login": "2020-07-31T20:00:00Z",
+        "is_superuser": true,
+        "username": "haoji",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-08-31T20:00:00Z",
+        "groups": [],
+        "user_permissions": []
+    }
+}
+]

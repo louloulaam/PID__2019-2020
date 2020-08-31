@@ -1,0 +1,79 @@
+[
+{
+    "model": "app.representation",
+    "pk": 1,
+    "fields": {
+        "show": 1,
+        "location": 2,
+        "time": "2020-09-18T17:41:28Z",
+        "total_seats": 200,
+        "available_seats": 190
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 2,
+    "fields": {
+        "show": 2,
+        "location": 1,
+        "time": "2020-09-27T17:35:00Z",
+        "total_seats": 110,
+        "available_seats": 105
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 3,
+    "fields": {
+        "show": 3,
+        "location": 3,
+        "time": "2020-10-30T18:45:00Z",
+        "total_seats": 310,
+        "available_seats": 303
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 4,
+    "fields": {
+        "show": 4,
+        "location": 4,
+        "time": "2020-09-20T19:40:00Z",
+        "total_seats": 250,
+        "available_seats": 250
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 5,
+    "fields": {
+        "show": 5,
+        "location": 5,
+        "time": "2020-09-25T17:30:00Z",
+        "total_seats": 500,
+        "available_seats": 495
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 6,
+    "fields": {
+        "show": 14,
+        "location": 11,
+        "time": "2020-05-16T17:00:00Z",
+        "total_seats": 22,
+        "available_seats": 22
+    }
+},
+{
+    "model": "app.representation",
+    "pk": 7,
+    "fields": {
+        "show": 11,
+        "location": 8,
+        "time": "2020-09-16T18:00:00Z",
+        "total_seats": 11,
+        "available_seats": 11
+    }
+}
+]

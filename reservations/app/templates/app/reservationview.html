@@ -1,0 +1,128 @@
+<!-- reservation view html template-->
+{% extends "base.html" %}
+
+{% block title %}Récapitulatif de la réservation{% endblock %}
+
+{% block content %}
+
+
+<h4 class ='col-12 bg-dark text-light rounded-pill px-4 py-3 mb-5  font-weight-bold'> Récapitulatif de la réservation </h4>
+<div class ='container bg-white rounded shadow'>
+    <div class="row  ">
+
+        <div class='col-lg-4'> 
+            <div class="" >
+                <img class="img-responsive img-fluid" style=" max-width: 100%; height: auto;" 
+                src="{{reservation.representation.show.poster|default:'http://placehold.it/200x200'}}">
+            </div>
+
+
+
+
+        </div>
+        <div class='col-lg-8'>
+
+                <table class='table'>
+
+                    <thead>
+                        <th> Representation</th>
+                        <th> Places </th>
+                        <th> Prix par place</th>
+                        <th> Total </th>
+        
+                    </thead>
+
+
+                    <tr> 
+                        <td> {{ reservation.representation.show.title }} </td>  
+                        <td> {{reservation.seats }} </td> 
+                        <td> {{ reservation.representation.show.price }} </td>
+                        <td> {{reservation.price }} </td>
+                    </tr>
+
+
+                </table>
+        </div>
+        
+    </div>
+
+
+    <div class="row">
+
+    
+        <div class='col-lg-4'> 
+        <ul>
+            <P> </P>
+            <li> {{ reservation.representation.location.designation}} </li>
+            <li> {{ reservation.representation.time }} </li>
+            <li> {{ reservation.representation.location.address }} </li>
+            <li> {{reservation.representation.location.locality.postal_code}} {{ reservation.representation.location.locality.locality }} </li>
+        </ul>        
+        </div>
+            
+        <div class='col-lg-8'>
+
+            <div class='row'> 
+
+            </div>
+            <div class='row'>
+                
+                <div class='col-12'>  
+                    
+                    <P>  </P> 
+                
+                </div>
+            
+            </div>
+            <div class='row'>
+                <div class='col-12'> 
+                    
+                    <P>  </P> 
+                
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-12'> 
+                    
+                    <P>  </P> 
+                
+                </div>
+            </div>
+
+            <div class='row'>                
+
+                <div class='col-lg-1'> 
+
+
+    
+                </div> 
+                
+                <div class='col-lg-4'> 
+                    {% if reservation.status == "Ongoing" %}
+                    <form class=' button form pull-right' method='GET' action ='{% url "homepaypal" %}'>
+                        <input name="idreservation" type='number' hidden='true' value = '{{reservation.pk}}' />
+                        <input class="btn btn-success rounded-pill py-2 btn-block" type='submit' value='payer'  />
+                    </form>
+                    {% endif %}
+                </div>
+
+                <div class='col-lg-2'> 
+
+
+    
+                    </div> 
+
+                <div class='col-lg-5'> 
+                    {% if reservation.status == "Ongoing" %}
+                        {{ form.render }}
+                    {% endif %}
+                </div> 
+            
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,28 @@
+<!-- home html template-->
+{% extends 'base.html' %}
+{% block title %}Accueil{% endblock title %}
+{% block content %}
+<section class="content">
+    {% for show in shows %}
+    <section>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-{% if forloop.counter|divisibleby:2 %}1{% else %}2{% endif %}">
+                    <div class="p-5"><img class="rounded-circle img-fluid" src="{{show.poster|default:'http://placehold.it/700x500'}}"></div>
+                </div>
+                <div class="col-lg-6 order-lg-{% if forloop.counter|divisibleby:2 %}2{% else %}1{% endif %}">
+                    <div class="p-5">
+                        <h2 class="display-4">{{show.title}}</h2>
+                        <small> Date de création : </small>
+                        <small>{{show.date_created}}</small>
+                        </br></br>
+                        <p> {{show.description|safe|truncatewords:50}}</p>
+                        <a href="{{ show.get_absolute_url }}" class="btn btn-outline-info btn-lg "> En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %} 
+</section>
+{% endblock content %}

@@ -1,0 +1,89 @@
+<!-- update show html template-->
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Page Content -->
+<div class="container">
+    <h1 class='my-4'>Liste des spectacles du théatre de la ville de Paris</h1>
+    <div class="alert alert-dismissible alert-success">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <span>
+            Récupération des spectacles réussi ! <a href="{% url 'show' %}" class="alert-link">Cliquez ici, pour voir notre nouvelle liste de spectacles</a>.
+        </span>
+    </div>
+    <p>
+        
+        
+    </p>
+    <div class="row my-1">
+        <div class="col-1 mr-3">
+            <span class="bg-success px-5 py-2"></span>
+        </div>
+        <div class="col-6">
+            {% if nb_to_create|length == 1 %}
+                <h4>{{ nb_to_create }} nouveau spéctacle a été crée </h4>
+            {% else %}
+                <h4>{{ nb_to_create }} nouveaux spéctacles ont été crée </h4>
+            {% endif %}
+
+        </div>
+    </div>
+    <div class="row my-1">
+        <div class="col-1 mr-3">
+            <span class="bg-info px-5 py-2"></span>
+        </div>
+        <div class="col-6">
+            {% if nb_to_update|length == 1 %}
+                <h4>{{ nb_to_update }} spéctacle ont été mis à jour </h4>
+            {% else %}
+                <h4>{{ nb_to_update }} spéctacles ont été mis à jour </h4>
+            {% endif %}
+        </div>
+    </div>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Titre</th>
+            <th scope="col">Description</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Bookable</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Date de création</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for data in data_dico %}
+
+                {% if data.is_new %}
+                    <tr class='table-success'>
+                {% else %}
+                    <tr class='table-info'>
+                {% endif %}
+
+                <th scope="row">{{data.show.title}}</th>
+                <td>{{data.show.description}}</td>
+                <td><img src='{{data.show.poster}}'></td>
+                <td class="text-center">
+
+                    {% load static %}
+
+                    {% if data.show.bookable %}
+                        <img src='{% static "admin/img/icon-yes.svg" %}'>
+                    {% else %}
+                        <img src='{% static "admin/img/icon-no.svg" %}'>
+                    {% endif %}
+
+                </td>
+                <td>{{data.show.price}}€</td>
+                <td>{{data.show.date_created}}</td>
+                </tr>
+            {% endfor%}
+            
+        </tbody>
+    </table>
+</div>
+<!-- /.container -->
+
+
+{% endblock %}

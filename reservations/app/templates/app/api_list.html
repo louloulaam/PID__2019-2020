@@ -1,0 +1,46 @@
+<!-- API list html template-->
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center">Liste des API de Mon Théatre ICC :</h1>
+        <div class="row text-center justify-content-center" id="api-list">
+            <div class='col-3 m-4'>
+                <a href="{% url 'api_artist' %}">
+                    <img src='https://assets.lofficiel-images.com/production/belgium/images/1547483963724921-shutterstock_1142341004.jpg?w=1920&h=800&fit=max&crop=faces&auto=%5B%22format%22%2C%20%22compress%22%5D&cs=srgb'>
+                    <p class="py-4 bg-dark text-white">Artistes</p>
+                </a>
+            </div>
+            <div class='col-3 m-4'>
+                <a href="{% url 'api_representation' %}">
+                    <img src='https://siena.rosselcdn.net/sites/default/files/dpistyles_v2/ena_16_9_extra_big/2020/03/03/node_528136/1875862/public/2020/03/03/B9722794159Z.1_20200303212829_000%2BG00FLAM29.1-0.jpg?itok=en3U4CwQ1583267320'>
+                    <p class="py-4 bg-dark text-white">Representations</p>
+                </a>
+            </div>
+            <div class='col-3 m-4'>
+                <a href="{% url 'api_location' %}">
+                    <img src='https://www.willemen.be/sites/default/files/styles/contractors_page_project_slide/public/field/image/ZOO_ECA_personeelsopening_JonasVerhulst-15.jpg?itok=Zqcn-vvw'>
+                    <p class="py-4 bg-dark text-white">Locations</p>
+                </a> 
+            </div>
+            <div class='col-3 m-4'>
+                <a href="{% url 'api_show' %}">
+                    <img src='https://zupimages.net/up/20/13/q7dc.jpg'>
+                    <p class="py-4 bg-dark text-white">Spectacles</p>
+                </a>
+            </div>
+            <div class='col-3 m-4'>
+                <a href="{% url 'ext-api-show-2' %}">
+                    <img src='https://api.theatredelaville-paris.com/assets/w800-h800-q80/d8a11c68/dolap_1.jpg'>
+                    <p class="py-4 bg-dark text-white">Spectacles du théatre de la ville de Paris (brut)</p>
+                </a>
+            </div>
+            <div class='col-3 m-4 text-center'>
+                <a href="{% url 'ext-api-show' %}">
+                    <img src='https://api.theatredelaville-paris.com/assets/w800-h800-q80/6c0c806c/darkcircus_1.jpg'>
+                    <p class="py-4 bg-dark text-white">Spectacles du théatre de la ville de Paris (filtré)</p>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

@@ -1,0 +1,92 @@
+<!-- show detail html template-->
+{% extends "base.html" %}
+{% block title %}{{show.title}}{% endblock %}
+
+{% block content %}
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Portfolio Item Heading -->
+    <h1 class="my-4">{{show.title}}
+    </h1>
+
+    <!-- Portfolio Item Row -->
+    <div class="row">
+
+        <div class="col-md-8">
+            <img class="img-fluid" src="{{show.poster|default:'http://placehold.it/700x500'}}" alt="">
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="my-3">Description</h3>
+            <p>{{show.description}}</p>
+            <h3 class="my-3">Information pratiques</h3>
+            <ul>
+                <li>Disponible : {{show.bookable}}</li>
+                <li>Prix : {{show.price}}</li>
+                <li>date de création : {{show.date_created}}</li>
+            </ul>
+        </div>
+
+    
+    {% for comment in comments %}
+        <p>{{ comment.user.username }} a commenté {{ comment.comment }}</p>
+    {% endfor %}
+        
+
+    </div>
+    <!-- /.row -->
+
+    <!-- Related Projects Row -->
+    <h3 class="my-4">Representation de ce spectable</h3>
+
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Titre</th>
+            <th>Date et heure</th>
+            <th>Place restante</th>
+            <th>Place disponible</th>
+            <th>Adresse</th>
+            <th>Localité</th>
+            <th> </th>
+            {% if request.user.is_staff %}
+            <th> </th>
+            <th><a href="{% url 'CreateRepresentation' show.pk %}" style="color:white;"> Ajouter <i class="fas fa-plus-circle"></i></a></th>
+            {% endif %}
+        </tr>
+        </thead>
+        <tbody>
+        {% for representation in representations %}
+        <tr>
+            <td>{{ representation.location.designation}}</td>
+            <td>{{ representation.time }}</td>
+            <td>{{ representation.available_seats }}</td>
+            <td>{{ representation.total_seats }}</td>
+            <td>{{ representation.location.address }}</td>
+            <td>{{ representation.location.locality.locality }} {{representation.location.locality.postal_code}}</td>
+
+            <td>
+                <a href="{% url 'representation_detail' representation.pk %}">
+                    <button type="button" class="btn btn-success">Réserver</button>
+                </a>
+            </td>
+            {% if request.user.is_staff %}
+            <td><a href="{% url 'UpdateRepresentation' representation.pk %}"><i class="fas fa-edit"></i></a></td>
+            <td><a href="{% url 'DeleteRepresentation' representation.pk %}"><i class="fas fa-trash"></i></a></td>
+            {% endif %}
+        </tr>
+        {% endfor %}
+
+        </tbody>
+    </table>
+
+
+</div>
+<!-- /.table -->
+
+</div>
+<!-- /.container -->
+
+
+{% endblock %}

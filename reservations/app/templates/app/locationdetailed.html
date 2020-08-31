@@ -1,0 +1,57 @@
+<!-- location detailed html template-->
+{% extends "base.html" %}
+{% block title %}{{location.designation}}{% endblock title %}
+
+<!-- {% block header %} <h2>  </h2> {% endblock header %} -->
+
+{% block content %}
+
+<section class="content">
+
+
+    <div class="card border-dark mb-4">
+        <h5 class="card-header bg-dark text-white">{{location.designation}}</h5>
+        <div class="card-body">
+            <h5>Adresse : {{location.address}}</h5>
+            <h5>Code Postal : {{location.locality.postal_code}} {{location.locality.locality}}</h5>
+            <h5>Téléphone : {{location.phone}}</h5>
+            <h5> Site internet : {{ location.website|urlize }}</h5>
+            {% if user.is_staff %}
+            <a href="{% url 'UpdateLocation' location.pk %}" class="btn btn-primary"> Modifier location </a>
+            <a href="{% url 'DeleteLocation' location.pk %}" class="btn btn-link"> Supprimer location </a>
+            {% endif %}
+            <a href="{% url 'LocationListView' %}" class="btn btn-secondary"> Retour aux emplacements</a>
+        </div>
+    </div>
+      <h2> Representions</h2>
+    <table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th>Spectacle</th>
+        <th>Quand</th>
+        <th>Sièges</th>
+        <th>Sièges libres</th>
+        <th> </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for rep in repdico %}
+    <tr>
+        <td>{{rep.show.title}}</td>
+        <td>{{rep.time}}</td>
+        <td>{{rep.total_seats}}</td>
+        <td>{{rep.available_seats}}</td>
+        <td>
+                <a href="{% url 'representation_detail' rep.pk %}">
+                    <button type="button" class="btn btn-success">Réserver</button>
+                </a>
+        </td>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</section>
+
+{% endblock content %}

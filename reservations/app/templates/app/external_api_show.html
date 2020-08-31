@@ -1,0 +1,57 @@
+<!-- external api show html template-->
+{% extends "base.html" %}
+{% block title %}Api externe{% endblock title %}
+
+{% block content %}
+<!-- Page Content -->
+<div class="container">
+    <h1 class='my-4'>Liste des spectacles du théatre de la ville de Paris</h1>
+    <p>
+        <a href="{% url 'update-ext-show' %}" class="btn btn-secondary">Mettre à jour les spectacles</a>
+    </p>
+    <table class="table table-hover">
+        <thead class="thead-dark">
+            <tr>
+            <th scope="col">Titre</th>
+            <th scope="col">Description</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Bookable</th>
+            <th scope="col">Prix</th>
+            <th scope="col">Date de création</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            {% for show in data %}
+                <tr>
+                <th scope="row">{{show.title|title}}</th>
+                <td>{{show.description}}</td>
+                <td><img src='{{show.poster}}'></td>
+                <td class="text-center">
+
+                    {% load static %}
+
+                    {% if show.bookable %}
+                        <img src='{% static "admin/img/icon-yes.svg" %}'>
+                    {% else %}
+                        <img src='{% static "admin/img/icon-no.svg" %}'>
+                    {% endif %}
+                    
+                </td>
+                <td>{{show.price}}€</td>
+                <td>{{show.date_created}}</td>
+                </tr>
+            {% endfor%}
+            
+        </tbody>
+    </table>
+
+    <p>
+        <a href="{% url 'update-ext-show' %}" class="btn btn-secondary">Mettre à jour les spectacles</a>
+    </p>
+
+</div>
+<!-- /.container -->
+
+
+{% endblock %}

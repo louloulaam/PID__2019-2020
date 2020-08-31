@@ -1,0 +1,42 @@
+[
+{
+    "model": "app.locality",
+    "pk": 1,
+    "fields": {
+        "postal_code": "1000",
+        "locality": "Bruxelles"
+    }
+},
+{
+    "model": "app.locality",
+    "pk": 2,
+    "fields": {
+        "postal_code": "1050",
+        "locality": "Ixelles"
+    }
+},
+{
+    "model": "app.locality",
+    "pk": 3,
+    "fields": {
+        "postal_code": "5000",
+        "locality": "Namur"
+    }
+},
+{
+    "model": "app.locality",
+    "pk": 4,
+    "fields": {
+        "postal_code": "2000",
+        "locality": "Anvers"
+    }
+},
+{
+    "model": "app.locality",
+    "pk": 5,
+    "fields": {
+        "postal_code": "6700",
+        "locality": "Arlon"
+    }
+}
+]

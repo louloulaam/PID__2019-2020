@@ -1,0 +1,134 @@
+[
+{
+    "model": "app.location",
+    "pk": 1,
+    "fields": {
+        "designation": "salle bleu",
+        "slug": "salle-reine-elisabeth",
+        "address": "place king",
+        "locality": 5,
+        "phone": "+32 3 233 84 44",
+        "website": "https://www.koninginelisabethzaal.be/fr/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 2,
+    "fields": {
+        "designation": "hello",
+        "slug": "jazzcafe-de-muze",
+        "address": "med",
+        "locality": 2,
+        "phone": "+32 3 226 01 26",
+        "website": "https://jazzcafedemuze.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 3,
+    "fields": {
+        "designation": "Th\u00e9\u00e2tre National",
+        "slug": "theatre-national-de-la-communaute-francaise",
+        "address": "Avenue jean claude",
+        "locality": 1,
+        "phone": "+32 203 41 55",
+        "website": "https://www.theatrenational.be/fr/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 4,
+    "fields": {
+        "designation": "Th\u00e9\u00e2tre Royal du bassin",
+        "slug": "theatre-royal-du-parc",
+        "address": "Rue des arts",
+        "locality": 1,
+        "phone": "+32 505 30 30",
+        "website": "http://www.theatreduparc.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 5,
+    "fields": {
+        "designation": "Th\u00e9\u00e2tre des beaux",
+        "slug": "theatre-de-la-toison-d-or",
+        "address": "Galeries des merveilles",
+        "locality": 5,
+        "phone": "+32 510 05 10",
+        "website": "http://www.ttotheatre.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 6,
+    "fields": {
+        "designation": "glouton",
+        "slug": "varia",
+        "address": "Rue du cin\u00e9ma 55",
+        "locality": 2,
+        "phone": "+32 640 82 58",
+        "website": "http://www.varia.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 7,
+    "fields": {
+        "designation": "Th\u00e9\u00e2tre de louis",
+        "slug": "theatre-de-namur",
+        "address": "Place du louis 47",
+        "locality": 4,
+        "phone": "+32 81 22 60 26",
+        "website": "http://www.theatredenamur.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 8,
+    "fields": {
+        "designation": "Th\u00e9\u00e2tre des faux",
+        "slug": "theatre-jardin-passion",
+        "address": "rue bernard",
+        "locality": 3,
+        "phone": "+32 472 96 53 16",
+        "website": "http://www.theatrejardinpassion.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 9,
+    "fields": {
+        "designation": "Ancien palais de Justice",
+        "slug": "ancien-palais-de-justice",
+        "address": "Place loom",
+        "locality": 1,
+        "phone": "+32 63 23 53 97",
+        "website": "http://www.palaisarlon.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 10,
+    "fields": {
+        "designation": "garage",
+        "slug": "l-entrepot",
+        "address": "Rue zozo",
+        "locality": 3,
+        "phone": "+32 63 45 60 84",
+        "website": "http://www.entrepotarlon.be/"
+    }
+},
+{
+    "model": "app.location",
+    "pk": 11,
+    "fields": {
+        "designation": "baba",
+        "slug": "baba",
+        "address": "babaab",
+        "locality": 3,
+        "phone": "0444.57.79.02",
+        "website": null
+    }
+}
+]

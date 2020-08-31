@@ -1,0 +1,13 @@
+<!--logout template-->
+{% extends "base.html" %}
+
+{% block title %}Se déconnecter {% endblock %}
+
+{% block content %}
+<div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Aurevoir </h4>
+  <p>Vous êtes bien déconnecter</p>
+  <hr>
+<a  href="{% url 'login' %}">Connectez Vous à nouveau</a>
+</div>
+{% endblock %}
